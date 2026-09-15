@@ -71,7 +71,13 @@ The 22 provider references have private claim/access mappings. Relevant claim-be
 
 ## Publication status
 
-Local checks do not establish hosted deployment success. GitHub Actions and live Pages evidence will be recorded after the validated candidate is published.
+The validated repository was published to [froand/capops-framework](https://github.com/froand/capops-framework) on **2026-09-15**, with `main` as the default branch.
+
+The [initial Documentation workflow](https://github.com/froand/capops-framework/actions/runs/34965776260) completed successfully for commit `72efea7625db94f08ca41e933ed8e560910691d3`. Both its Ubuntu build and Pages deployment jobs succeeded. This is the observed initial publication run, not a claim about every future revision; see the [workflow history](https://github.com/froand/capops-framework/actions/workflows/docs.yml) for later changes.
+
+The [HTTPS documentation site](https://froand.github.io/capops-framework/) was verified live. The home page, a template, Azure guidance, this policy page, search index, and 404 document returned HTTP 200. The same browser checks then passed on the live site: search results, actual clipboard copying, all seven native diagrams, representative label sizes, mobile layout, and keyboard diagram scrolling.
+
+All nine requested topics and eight requested labels were configured. Private vulnerability reporting is enabled. The remote `main` commit matched the local publication commit. An initial push was rejected because the active credential lacked workflow scope; a process-only switch to the existing, separately verified same-owner credential resolved the push without changing global authentication configuration or rewriting history.
 
 ## Known limitations
 
@@ -80,6 +86,8 @@ Pattern scanning cannot establish that text is confidential or original. Citatio
 Provider terms and supported features can change after the review date. No cloud-workload deployment, quota request, reservation purchase, or real recovery exercise was performed. The framework is a proposed practice, not evidence that capacity can be obtained.
 
 The browser checks used Chromium, not every supported browser. The site loads Mermaid from a versioned public CDN and theme fonts from external services; it is not an offline distribution. The npm audit is a point-in-time advisory check of Node dependencies, not a full supply-chain or application-security audit.
+
+The successful hosted run reported GitHub annotations that several pinned actions declare Node.js 20 and are being executed on Node.js 24. These did not fail the run; reviewing those action pins is a maintenance item, not evidence of a completed runtime migration.
 
 ## Recommended future improvements
 

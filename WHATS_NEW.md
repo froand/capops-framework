@@ -15,7 +15,7 @@ The initial documentation expands a compact framework baseline into a practical 
 
 The presentation's useful concepts were editorially transformed; source files, speaker notes, private analysis, and presentation artwork are not distributed. See [VALIDATION.md](VALIDATION.md) for actual checks and their limits.
 
-The public repository is [froand/capops-framework](https://github.com/froand/capops-framework), with documentation configured for [GitHub Pages](https://froand.github.io/capops-framework/).
+The public repository is [froand/capops-framework](https://github.com/froand/capops-framework), with documentation published on [GitHub Pages](https://froand.github.io/capops-framework/). The initial hosted build and deployment succeeded, and live browser checks verified search, clipboard copying, diagrams, and mobile behavior. Nine repository topics, eight requested labels, and private vulnerability reporting are configured.
 
 ## Related content
 

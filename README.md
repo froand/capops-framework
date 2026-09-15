@@ -70,6 +70,8 @@ The local site is served at `http://127.0.0.1:8000`. The diagram check uses Play
 
 The source checker validates Markdown links and anchors, page contracts, navigation, YAML, and common publication hazards. The site checker validates generated local links, fragments, and every navigation page, including templates and project policies. Mermaid uses the same version in browser and syntax checks; diagrams can scroll horizontally on narrow screens rather than shrinking their labels. These checks support, but cannot replace, editorial and confidentiality review. See [VALIDATION.md](VALIDATION.md) for actual publication results and limitations.
 
+The site is published from `main` by the [Documentation workflow](https://github.com/froand/capops-framework/actions/workflows/docs.yml). The initial hosted build, Pages deployment, and live desktop/mobile browser checks passed; the validation report distinguishes that observed run from future revisions.
+
 ## Project direction
 
 See [WHATS_NEW.md](WHATS_NEW.md) for documentation changes and [ROADMAP.md](ROADMAP.md) for proposed releases. Roadmap items are review goals, not dated commitments, certification criteria, or evidence of industry adoption.
