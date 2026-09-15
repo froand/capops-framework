@@ -1,0 +1,32 @@
+name: Provider-guidance correction
+description: Correct a product-specific claim using authoritative public documentation
+title: "[Provider guidance]: "
+labels: [provider-guidance, accuracy]
+body:
+  - type: markdown
+    attributes:
+      value: Never include private support responses, current regional capacity status, customer details, or internal provider processes. For Microsoft claims use public Microsoft Learn references only.
+  - type: input
+    id: page
+    attributes:
+      label: Provider page and affected claim
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Authoritative public reference
+      description: Give the direct URL, date reviewed, and the specific fact it supports. Paraphrase rather than copy.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Corrected behavior and restrictions
+      description: Distinguish quota, financial benefit, capacity benefit, support scope, matching conditions, and commercial terms.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Reader impact and related pages

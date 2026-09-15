@@ -1,0 +1,32 @@
+name: New scenario proposal
+description: Propose a fictional example that helps readers make a capacity decision
+title: "[Scenario]: "
+labels: [scenario]
+body:
+  - type: markdown
+    attributes:
+      value: Do not submit real customer architectures or incidents. Rewrite the context as a generic fictional case.
+  - type: textarea
+    id: context
+    attributes:
+      label: Fictional business context and capacity challenge
+    validations:
+      required: true
+  - type: textarea
+    id: dimensions
+    attributes:
+      label: Demand dimensions and assumptions
+      description: Include family, quantity, location, date, ramp, duration, recovery, and flexibility where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision, alternatives, and residual risk
+      description: Include relevant capabilities, actions, FinOps trade-offs, owner, deadline, and revisit trigger.
+    validations:
+      required: true
+  - type: textarea
+    id: lessons
+    attributes:
+      label: Common mistakes and learning value

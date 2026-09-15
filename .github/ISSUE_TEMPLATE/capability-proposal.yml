@@ -1,0 +1,33 @@
+name: Capability proposal
+description: Propose a substantive addition or revision to a CapOps capability
+title: "[Capability]: "
+labels: [capability, framework]
+body:
+  - type: markdown
+    attributes:
+      value: Use original prose and fictional examples. A proposed capability is not a provider assurance mechanism.
+  - type: input
+    id: name
+    attributes:
+      label: Capability name
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Definition and business outcome
+      description: Explain the work and the decision it improves.
+    validations:
+      required: true
+  - type: textarea
+    id: operation
+    attributes:
+      label: Inputs, activities, outputs, and accountable roles
+      description: Include a fictional practical example and useful measurements.
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Dependencies, overlap, and risks
+      description: Explain why existing capabilities do not already cover this need.

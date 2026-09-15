@@ -1,0 +1,139 @@
+site_name: CapOps Framework
+site_description: A proposed community framework and cultural practice for cloud and infrastructure capacity
+docs_dir: docs
+site_url: https://froand.github.io/capops-framework/
+repo_url: https://github.com/froand/capops-framework
+repo_name: froand/capops-framework
+exclude_docs: |
+  !/templates/
+extra_javascript:
+  - https://unpkg.com/mermaid@11.17.2/dist/mermaid.min.js
+extra_css:
+  - stylesheets/diagrams.css
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+  palette:
+    primary: teal
+    accent: blue
+plugins:
+  - search
+hooks:
+  - scripts/community_pages.py
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: warn
+nav:
+  - Start here:
+      - Welcome: index.md
+      - What is CapOps?: overview/what-is-capops.md
+      - Why CapOps?: overview/why-capops.md
+      - Principles: overview/principles.md
+      - CapOps and FinOps: overview/capops-and-finops.md
+      - People, process, and technology: overview/people-process-technology.md
+  - Framework:
+      - Overview: framework/framework-overview.md
+      - Domains: framework/domains.md
+      - Capabilities: framework/capabilities.md
+      - Personas: framework/personas.md
+      - Lifecycle: framework/lifecycle.md
+  - Domains:
+      - Understand capacity: domains/understand-capacity.md
+      - Plan capacity: domains/plan-capacity.md
+      - Secure and allocate: domains/secure-and-allocate-capacity.md
+      - Operate and optimize: domains/operate-and-optimize-capacity.md
+      - Manage the practice: domains/manage-the-capops-practice.md
+  - Capabilities:
+      - Visibility: capabilities/capacity-visibility.md
+      - Forecasting: capabilities/capacity-forecasting.md
+      - Quota management: capabilities/quota-management.md
+      - Acquisition: capabilities/capacity-acquisition.md
+      - Allocation: capabilities/capacity-allocation.md
+      - Workload placement: capabilities/workload-placement.md
+      - Governance: capabilities/capacity-governance.md
+      - Optimization: capabilities/capacity-optimization.md
+      - Resilience: capabilities/capacity-resilience.md
+      - Risk management: capabilities/capacity-risk-management.md
+      - Reporting and KPIs: capabilities/reporting-and-kpis.md
+      - Automation: capabilities/automation.md
+  - Operating model:
+      - Overview: operating-model/operating-model.md
+      - Roles and responsibilities: operating-model/roles-and-responsibilities.md
+      - Governance: operating-model/governance.md
+      - Cadence: operating-model/operating-cadence.md
+      - Capacity review: operating-model/capacity-review.md
+  - Maturity:
+      - Model: maturity/maturity-model.md
+      - Assessment: maturity/assessment.md
+      - Adoption roadmap: maturity/adoption-roadmap.md
+  - Implementation:
+      - Getting started: implementation/getting-started.md
+      - Conduct an iteration: implementation/conduct-a-capops-iteration.md
+      - Build a forecast: implementation/build-a-demand-forecast.md
+      - Create a risk register: implementation/create-a-capacity-risk-register.md
+      - Establish governance: implementation/establish-capacity-governance.md
+      - Run a monthly review: implementation/monthly-capops-review.md
+      - Integrate FinOps: implementation/integrate-capops-and-finops.md
+      - Review critical workloads: implementation/review-critical-workloads.md
+      - Validate recovery capacity: implementation/validate-recovery-capacity.md
+      - Manage commitments: implementation/manage-capacity-commitments.md
+  - Templates:
+      - Demand submission: templates/capacity-demand-template.md
+      - Workload profile: templates/workload-capacity-profile.md
+      - Risk register: templates/capacity-risk-register.md
+      - Monthly review: templates/monthly-review-template.md
+      - Maturity assessment: templates/maturity-assessment.md
+      - Decision record: templates/decision-record.md
+      - Commitment register: templates/capacity-commitment-register.md
+      - Recovery profile: templates/recovery-capacity-profile.md
+      - Responsibility matrix: templates/responsibility-matrix.md
+      - Scorecard: templates/capops-scorecard.md
+  - Scenarios:
+      - Large migration: scenarios/cloud-migration.md
+      - AI and GPU capacity: scenarios/ai-and-gpu-capacity.md
+      - Disaster recovery: scenarios/disaster-recovery.md
+      - Multi-region architecture: scenarios/multi-region-design.md
+      - Seasonal demand: scenarios/seasonal-demand.md
+      - Regulated workloads: scenarios/regulated-workloads.md
+      - Rapid business growth: scenarios/rapid-business-growth.md
+      - Specialized dependencies: scenarios/specialized-resource-dependencies.md
+      - Legacy modernization: scenarios/legacy-resource-modernization.md
+      - Project prioritization: scenarios/capacity-constrained-prioritization.md
+  - Provider guidance:
+      - Microsoft Azure: cloud-guidance/azure.md
+      - Amazon Web Services: cloud-guidance/aws.md
+      - Google Cloud: cloud-guidance/google-cloud.md
+      - Hybrid and private infrastructure: cloud-guidance/hybrid-and-private-cloud.md
+  - Glossary: glossary.md
+  - Project:
+      - Contributing: project/CONTRIBUTING.md
+      - Governance: project/GOVERNANCE.md
+      - Code of conduct: project/CODE_OF_CONDUCT.md
+      - Security: project/SECURITY.md
+      - Disclaimer: project/DISCLAIMER.md
+      - Roadmap: project/ROADMAP.md
+      - What's new: project/WHATS_NEW.md
+      - Validation: project/VALIDATION.md
+      - License: project/LICENSE.md

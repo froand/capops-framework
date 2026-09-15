@@ -1,0 +1,27 @@
+name: Framework feedback
+description: Discuss the proposed framework's definitions, boundaries, or usefulness
+title: "[Framework]: "
+labels: [framework, discussion]
+body:
+  - type: markdown
+    attributes:
+      value: CapOps is an independent community proposal. Do not include customer details or private organizational/provider information.
+  - type: textarea
+    id: context
+    attributes:
+      label: Public or fictional context
+      description: Which reader and decision would benefit from a change?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain the gap, alternative wording or structure, and trade-offs.
+    validations:
+      required: true
+  - type: textarea
+    id: implications
+    attributes:
+      label: Related concepts and evidence
+      description: Note affected pages, overlap with other disciplines, and public sources.

@@ -1,0 +1,23 @@
+{
+  "name": "capops-framework-docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local validation tooling for the proposed CapOps Framework",
+  "scripts": {
+    "lint": "markdownlint-cli2",
+    "diagrams": "node scripts/check-diagrams.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.23.2",
+    "mermaid": "11.17.2",
+    "playwright": "1.63.0"
+  },
+  "overrides": {
+    "markdownlint-cli2": {
+      "smol-toml": "1.8.0"
+    }
+  }
+}

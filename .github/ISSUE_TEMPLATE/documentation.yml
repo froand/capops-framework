@@ -1,0 +1,34 @@
+name: Documentation issue
+description: Report unclear prose, a broken link, or a documentation defect
+title: "[Documentation]: "
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: Use public, fictional examples only. Never include secrets, customer details, account identifiers, or nonpublic provider information.
+  - type: input
+    id: page
+    attributes:
+      label: Page and section
+      description: Link to the affected page or give its repository path.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Reader problem
+      description: What is unclear or incorrect, and which decision does it affect?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction and evidence
+      description: Include public sources if this changes a factual claim.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Publication safety
+      options:
+        - label: This report contains only public or fictional information.
+          required: true
